@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Satisfação - CTI | Unimed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="faixa-verde">
+      <!-- Substitua pelo caminho da sua logo Unimed -->
+      <img src="Logo.png" alt="Logo Unimed">
+    </div>
+    <h1>Pesquisa de Satisfação - CTI</h1>
+  </header>
+
+  <main>
+    <h2>Queremos ouvir você!</h2>
+    <p class="descricao">
+      Sua opinião é muito importante para melhorarmos continuamente nossos serviços no CTI da Unimed.
+      Por favor, responda esta breve pesquisa sobre sua experiência ou a de seu familiar durante a permanência.
+    </p>
+
+    <div class="setor">
+      <label>Selecione o setor:</label>
+      <div class="opcoes-setor">
+        <input type="radio" id="uti" name="setor" value="UTI">
+        <label for="uti">UTI</label>
+
+        <input type="radio" id="cti" name="setor" value="CTI">
+        <label for="cti">CTI</label>
+      </div>
+    </div>
+
+    <form>
+      <div>
+        <div class="campo-form">
+  <label for="nome">Nome do paciente (opcional):</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite o nome (opcional)">
+</div>
+
+<div class="campo-form">
+  <label for="data">Data da internação:</label>
+  <input type="date" id="data" name="data">
+</div>
+
+<div class="campo-form">
+  <label>Como você avalia a permanência no setor?</label>
+  <div class="satisfacao">
+    <input type="radio" id="otimo" name="avaliacao" value="Ótimo">
+    <label for="otimo">Ótimo</label>
+
+    <input type="radio" id="bom" name="avaliacao" value="Bom">
+    <label for="bom">Bom</label>
+
+    <input type="radio" id="regular-av" name="avaliacao" value="Regular">
+    <label for="regular-av">Regular</label>
+
+    <input type="radio" id="ruim" name="avaliacao" value="Ruim">
+    <label for="ruim">Ruim</label>
+  </div>
+</div>
+
+<div class="campo-form">
+  <label for="comentarios">Comentários ou sugestões:</label>
+  <textarea id="comentarios" name="comentarios" placeholder="Escreva aqui suas observações..."></textarea>
+</div>
+
+
+      <button type="submit">Enviar Avaliação</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 Unimed — Pesquisa de Satisfação do Setor CTI
+  </footer>
+
+</body>
+</html>
+
